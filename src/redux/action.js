@@ -5,3 +5,8 @@ const { actions: slice } = authSlice;
 export const LoginAction = (phone) => (dispatch) => {
   dispatch(slice.setLogin(phone));
 };
+
+//logout actions
+export const LogoutAction = () => (dispatch) => {
+  dispatch(slice.setLogout());
+};

@@ -11,6 +11,10 @@ export const authSlice = createSlice({
       state.isAuthenticated = true;
       state.phone = action.payload;
     },
+    setLogout: (state, action) => {
+      state.isAuthenticated = false;
+      state.phone = "";
+    },
   },
 });
 
